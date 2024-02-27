@@ -110,7 +110,7 @@ console.log(x, y);
 
 const averageAge = (ageJones + ageSarah) / 2
 console.log(ageJones, ageSarah, averageAge);
-*/
+
 
 const firstName = 'Tayo';
 const job = 'Consultant';
@@ -132,4 +132,33 @@ lines`);
 console.log(`String
 multiple
 line`);
+*/
 
+const price = 350;
+const qualityStands = price >= 300;
+
+if (price >= 300) {
+  console.log('Butter should be added');
+}
+
+const age = 15;
+const isOldEnough = age >= 18;
+
+if(isOldEnough) {
+  console.log('Sarah can start her driving lessons 🚗');
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young, Wait another ${yearsLeft} years 👍`);
+}
+
+const birthYear = 1998;
+
+let century;
+if(birthYear <= 2000) {
+  century = 20;
+} else { 
+ century = 21;
+}
+console.log(century);
+//console.log(`You were born in the ${century}`);
+console.log(`You were born in the ${century}th century`);
