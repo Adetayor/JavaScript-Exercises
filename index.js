@@ -132,8 +132,9 @@ lines`);
 console.log(`String
 multiple
 line`);
-*/
 
+
+//type coversion
 const price = 350;
 const qualityStands = price >= 300;
 
@@ -190,3 +191,107 @@ console.log(n);
 
 console.log(2 + 3 + 4 + '5');
 console.log('10' - '4' - '3' - 2 + '5');
+
+
+//Truthy and Falsy Values
+//Falsy values are not exactly false but will become false when we try to convert them in a booleans
+// 5 falsy values: 0, '', undefined, null, NaN, false
+//truthy values are true when we attempt to convert them to a boolean
+//anything apart from the falsy values are truthy values examples any number that is not zero any string that is notan empty string
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean());
+console.log(Boolean({}));
+console.log(Boolean(''));
+//conversion to boolean is always implicit not explicit, Js does type coercion to booleans in 2 scenerios 1st when using logical operator and 
+//2nd in logical context like in the condition on if else statements
+
+const money = 0;
+if(money) {
+  console.log("Don't spend it all 😊");
+} else {
+  console.log("Don't Borrow, Get a Job!");
+}
+
+const naira = 100;
+if(naira) {
+  console.log("Don't spend it all 😊");
+} else {
+  console.log("Don't Borrow, Get a Job!");
+}
+
+let height;
+if(height) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is UNDEFINED');
+}
+
+let length;
+if(length) {
+  console.log('YAY! Height is defined');
+} else {
+  console.log('Height is UNDEFINED');
+}
+*/
+
+//= assignment
+//== loose equality operator does type coercion, introduces bug
+//=== strict equality operator becos it does not perform type coercion, return wen both values and data types are the same
+const age = 10;
+if(age === 10)
+console.log('You just became an adult (strict)');
+if(age == 10)
+console.log('You just became an adult (loose)');
+
+18 === 18;
+18 === 19;
+'18' == 18;
+'18' === 18;
+
+const favourite = prompt("what's your favorite number?");
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite == 23) { //'23'== 23
+  console.log('Cool! 23 is an amazing number!')
+}
+
+const lucky = Number(prompt("what's your lucky number?"));
+console.log(lucky);
+console.log(typeof lucky);
+
+if (lucky === 34) {
+  console.log('Cool! 34 is the luckiest number!')
+}
+
+const size = Number(prompt("what's your measurement?"));
+console.log(size);
+console.log(typeof size);
+
+if (size === 15) {
+  console.log('Wooow! You are an Aries!')
+} else if (size === 25) {
+  console.log('Mheeeeeennnn! You are LEO')
+} else {
+  console.log('You are neither an Aries or a Leo, WELCOME!')
+}
+
+const club = Number(prompt("what's your Football Club Number?"));
+console.log(club);
+console.log(typeof club);
+
+if (club === 12) {
+  console.log('Nice One! Up Barca!')
+} else if (club === 20) {
+  console.log('Bravo! Up Gunners')
+} else if (club === 32) {
+  console.log('Naso! Never Walk Alone')
+} else {
+  console.log('You are not a Football Fan, BLESSINGS!')
+}
+
+//Different Operator != loose version !== strict version
+if(favourite !== 23) console.log('why not 23');
