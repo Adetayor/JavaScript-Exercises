@@ -162,3 +162,31 @@ if(birthYear <= 2000) {
 console.log(century);
 //console.log(`You were born in the ${century}`);
 console.log(`You were born in the ${century}th century`);
+
+// type Conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear); // converts string to number,
+console.log(inputYear + 18);  //inputYear variable is still a string, hence the result
+console.log(Number(inputYear) + 18);  //inorder to perform the calculation the number should be used not the string
+
+console.log(Number('Jonas')); // Becos what we are trying to convert is a string with get Nan(Not a number)
+console.log(typeof NaN); //This NaN, means an invalid number
+
+console.log(String(23)); // converts a number to a string
+console.log(String(45), 45); //string type and number type, note the color, Js only converts to string, number and booleans not to null or undefined
+
+// type Coercion
+console.log('I am ' + 23 + 'years old'); // + operator trigers a coercion to strings, operation btw a string and a number and the plus operator is used the number will converted to string
+console.log('I am ' + '23' + 'years old'); //
+console.log('23' - '10' - 3); // - operator converted to a number operation
+console.log('23' + '10' + 3); // + operator converted to a string operation
+console.log('23' + '10' - 3); // both the string and the number operation is carried 
+console.log('23' * '2'); // both strings converted to a number operation becos thats the only way the multiplication operator can work
+console.log('23' * '2'); // same with dividing
+
+let n = '1' + 1; // result is string 11
+n = n - 1; //the string 11 is converted to a number
+console.log(n);
+
+console.log(2 + 3 + 4 + '5');
+console.log('10' - '4' - '3' - 2 + '5');
