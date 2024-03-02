@@ -235,7 +235,6 @@ if(length) {
 } else {
   console.log('Height is UNDEFINED');
 }
-*/
 
 //= assignment
 //== loose equality operator does type coercion, introduces bug
@@ -295,3 +294,29 @@ if (club === 12) {
 
 //Different Operator != loose version !== strict version
 if(favourite !== 23) console.log('why not 23');
+*/
+
+const hasDriversLicense = true; // A
+const hasGoodVision = false; // B (change to true to check result)
+
+console.log(hasDriversLicense && hasGoodVision); // And operator
+console.log(hasDriversLicense || hasGoodVision); // Or operator
+console.log(!hasDriversLicense); // Not operator 
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if(hasDriversLicense && hasGoodVision) {
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
+
+const isTired = true; // C set to false
+console.log(hasDriversLicense || hasGoodVision || isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if(hasDriversLicense && hasGoodVision && isTired) {
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
