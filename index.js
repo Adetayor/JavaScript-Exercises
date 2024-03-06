@@ -294,7 +294,7 @@ if (club === 12) {
 
 //Different Operator != loose version !== strict version
 if(favourite !== 23) console.log('why not 23');
-*/
+
 
 const hasDriversLicense = true; // A
 const hasGoodVision = false; // B (change to true to check result)
@@ -319,4 +319,47 @@ if(hasDriversLicense && hasGoodVision && isTired) {
   console.log('Sarah is able to drive!');
 } else {
   console.log('Someone else should drive...');
+} */
+
+const day = 'monday'; //wednessday, thursday
+
+//Switch statements helps to avoid repetitive codes
+switch(day) {       
+  case 'monday': //day === 'monday'
+    console.log('plan course structure');
+    console.log('Go to coding meetup');
+    break; //Without the break the code simply continues executing
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednessday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('Record videos');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekend :D');
+    break;
+  default:
+    console.log('Not a valid day!');
+}
+
+//Writting the same code in an if else statement
+if (day === 'monday') {
+  console.log('plan course structure');
+  console.log('Go to coding meetup');
+} else if(day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else if(day === 'wednessday' || day === 'thursday') 
+{
+  console.log('Write code examples');
+} else if(day === 'friday') {
+  console.log('Record videos');
+} else if(day === 'saturday' || day === 'sunday') {
+  console.log('Enjoy the weekend :D');
+} else {
+  console.log('Not a valid day!');
 }
