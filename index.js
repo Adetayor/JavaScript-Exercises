@@ -319,7 +319,7 @@ if(hasDriversLicense && hasGoodVision && isTired) {
   console.log('Sarah is able to drive!');
 } else {
   console.log('Someone else should drive...');
-} */
+} 
 
 const day = 'monday'; //wednessday, thursday
 
@@ -362,4 +362,41 @@ if (day === 'monday') {
   console.log('Enjoy the weekend :D');
 } else {
   console.log('Not a valid day!');
+} */
+
+//The Conditional (Tenary) Operator
+//An expression is a piece of code that produces a Value
+3 + 4
+1991
+true && false && !false //expression
+
+if (23 > 10) { //statements
+  const str = '23 is bigger';
 }
+
+console.log(`I'm $(2037 - 1991) years old.`) //Expression
+console.log(`I'm $(2037 - 1991) years old $(if (23 > 10) {
+  const str = '23 is bigger'; 
+})`)   //Error becos statements don't makes sense where Javascripts expects an expression
+
+const me = 'Jones';
+console.log(`I'm $(2037 - 1991) years old ${me}`);
+
+const age = 23;
+//age >= 18 ? console.log('I like to drink wine 🍷'): //An Operator is an expression becos it always produces a value
+//console.log('I like to drink water 💧'); //If else statement all in one line
+
+const drink = age >= 18 ? 'wine 🍷': 'water 💧';
+console.log(drink);
+
+let drink2;
+if(age >= 18) {
+  drink2 = 'wine 🍷';
+} else {
+  drink2 = 'water 💧';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷': 'water 💧'}`);
+//Tenary operator is not a substitution or replacement for if else statements becos in larger blocks of code the tenary operator won.t work
+// but the if else statements will, tenary operator is to make quick decision on short codes
