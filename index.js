@@ -400,3 +400,4 @@ console.log(drink2);
 console.log(`I like to drink ${age >= 18 ? 'wine 🍷': 'water 💧'}`);
 //Tenary operator is not a substitution or replacement for if else statements becos in larger blocks of code the tenary operator won.t work
 // but the if else statements will, tenary operator is to make quick decision on short codes
+console.log('You are the');
